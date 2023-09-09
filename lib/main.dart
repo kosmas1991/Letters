@@ -29,7 +29,7 @@ class StartScreen extends StatelessWidget {
             TextButton(
                 onPressed: () {},
                 child: const Text(
-                  'Κάνε το quiz',
+                  'Κάμε το quiz',
                   style: TextStyle(fontSize: 20),
                 ))
           ],
