@@ -13,7 +13,7 @@ class StartScreen extends StatelessWidget {
     return Column(
       mainAxisAlignment: MainAxisAlignment.spaceAround,
       children: [
-        Image.asset('assets/images/quiz-logo.png'),
+        Image.asset('assets/images/new_logo.png'),
         const Text(
           'Πόσο Bubu είσαι;',
           style: TextStyle(
