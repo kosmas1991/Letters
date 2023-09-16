@@ -9,7 +9,7 @@ class Buttons extends StatelessWidget {
     required this.data,
     super.key,
   });
-  final void Function() functiones;
+  final void Function(bool boolean) functiones;
   final List<Map<String, List<int>>> data;
   final int currentNumber;
 
@@ -25,17 +25,17 @@ class Buttons extends StatelessWidget {
     final List<Button> list = [];
     list.add(Button(
         func: () {
-          functiones();
+          functiones(true);
         },
         answer: data[currentNumber].values.elementAt(0)[0].toString()));
     list.add(Button(
         func: () {
-          functiones();
+          functiones(false);
         },
         answer: data[currentNumber].values.elementAt(0)[1].toString()));
     list.add(Button(
         func: () {
-          functiones();
+          functiones(false);
         },
         answer: data[currentNumber].values.elementAt(0)[2].toString()));
     list.shuffle();
